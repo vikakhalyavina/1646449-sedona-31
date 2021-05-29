@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/31/user/1646449).
-* Наставник: `Неизвестно`.
+* Студент: [Виктория Халявина](https://up.htmlacademy.ru/htmlcss/31/user/1646449).
+* Наставник: [Алина Шаймиева] (https://htmlacademy.ru/profile/id74223).
 
 ---
 
