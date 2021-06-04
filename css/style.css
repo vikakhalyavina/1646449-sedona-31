@@ -1,0 +1,177 @@
+/* Variables */
+
+:root {
+    --basic-black: #000000;
+    --basic-blue: #81B3D2;
+    --basic-dark-blue: #669EC0
+    --basic-more-dark-blue: #5496BD
+    --basic-dark: #333333;
+    --basic-neutral: #766357;
+    --basic-extra-light:#F2F2F2;
+    --basic-white: #ffffff;
+    --special: #666666;
+  }
+  /* Global */
+
+  body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+    background-image: url("/img/bg1.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Main navigation */
+
+  .main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: var(--basic-black);
+    background-color: transparent;
+  }
+  
+  .main-navigation-wrapper {
+    background-color: var(--basic-white);
+  }
+
+  .site-navigation {
+    list-style: none;
+  }
+  
+
+/* User navigation */
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--basic-blue);
+}
+  
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align:center;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+/*Title*/
+
+.title {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.subtitle {
+  color: var(--basic-dark);
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(#5496BD);
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: var(--basic-blue);
+}
+
+/* Contacts */
+
+.footer-phone {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Appointment */
+
+.appointment-item input {
+  font: inherit;
+  background-color: transparent;
+}
+
+.appointment-item input:focus {
+  border-color: var(--special);
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.footer-social h2 {
+  font-size: 14px;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-blue);
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.section-form{
+  background-image: url("/img/bg2.jpg");
+}
