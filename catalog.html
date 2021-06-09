@@ -13,27 +13,26 @@
 
     
     <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="138" height="70" alt="Логотип Седона">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="catalog.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-    </header>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото видео</a></li>
+          <li><a class="main-header-logo">
+            <img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      </header>
 
 
     <main class="page-catalog">
 
       <section class="filters">
-        <h2>Выбор жилья</h2>
+        <h2 class="hide">Выбор жилья</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
+          <fieldset class="fieldset">
+            <legend class="heading">Инфраструктура:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
                 <input class="filter-input-checkbox filter-input" type="checkbox" name="pool" id="type-pool" checked> 
@@ -50,8 +49,8 @@
             </ul>
           </fieldset>
 
-          <fieldset>
-            <legend>Тип жилья:</legend>
+          <fieldset class="fieldset">
+            <legend class="heading">Тип жилья:</legend>
       <ul>
         <li class="filter-option filter-checkbox">
           <input class="filter-input-checkbox filter-input" type="checkbox" name="hotel" id="type-hotel" checked> 
@@ -67,18 +66,22 @@
         </li>
       </ul>
             </fieldset>
-      
-            <fieldset>
-              <legend>Стоимость в сутки,₽:</legend>
-                <label class="button-catalog" for="from">от <input type="text" name="from" id="from" value="0"></label>
-                <label class="button-catalog" for="to">до<input type="text" name="to" id="to" value="3000"></label>
-          </fieldset>
-            <button class="button-catalog" type="submit">Показать</button>
+            <table class="table">
+              <caption class="caption">Стоимость в сутки,₽:</caption>
+              <tr>
+              <td> ОТ 0</td>
+              <td class="td">ДО 3000</td>
+              </tr>
+            </table>
+            <img src="/img/filter-button.svg" width="19" height="19" alt="Бегунок"/>
+            <img src="/img/line.svg" width="248" height="2" alt="Бегунок"/>
+            <img src="/img/filter-button.svg" width="19" height="19" alt="Бегунок"/>
+            <button class="button-catalog-show" type="submit">Показать</button>
           </form>
         </section>
 
         <section>
-          <h2>Каталог</h2> <!--скрытый заголовок-->
+          <h2 class="hide">Каталог</h2> <!--скрытый заголовок-->
           <p class="search">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
           <ul class="sorting-catalog">
@@ -86,10 +89,8 @@
             <li><a href="blank.html">По типу</a></li>
             <li><a href="blank.html">По рейтингу</a></li>
           </ul>
-          <ul>
-            <li class="button-up"><a href="blank.html"><img src="img/up.svg" width="11" height="10" alt="Наверх"/></a></li>
-            <li class="button-down"><a href="blank.html"><img src="img/down.svg" width="11" height="10" alt="Вниз"/></a></li>
-          </ul>
+           <div class="button-up"></div> 
+           <div class="button-down"></div> 
         </section>
 
         <section>
@@ -98,8 +99,11 @@
           <a class="title-catalog" href="#">Amara Resort & Spa</a>
           <p class="subtitle-catalog">Гостиница</p>
           <p class="subtitle-catalog">от 4000</p>
-          <a class="button-more-catalog" href="blank.html">Подробнее</a>
-          <a class="button-search-catalog" href="blank.html">Забронировать</a>
+          <button class="button-catalog-more">Подробнее</button>
+          <button class="button-catalog-search">Забронировать</button>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 8,5</p>
         </li>
@@ -107,8 +111,10 @@
           <a class="title-catalog" href="#">Desert Quail Inn</a>
           <p class="subtitle-catalog">Мотель</p>
           <p class="subtitle-catalog">от 3000</p>
-          <a class="button-more-catalog" href="blank.html">Подробнее</a>
-          <a class="button-search-catalog" href="blank.html">Забронировать</a>
+          <button class="button-catalog-more">Подробнее</button>
+          <button class="button-catalog-search">Забронировать</button>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 8,9</p>
         </li>
@@ -116,8 +122,9 @@
           <a class="title-catalog" href="#">Villas at Poco Diablo</a>
           <p class="subtitle-catalog">Апартаменты</p>
           <p class="subtitle-catalog">от 2000</p>
-          <a class="button-more-catalog" href="blank.html">Подробнее</a>
-          <a class="button-search-catalog" href="blank.html">Забронировать</a>
+          <button class="button-catalog-more">Подробнее</button>
+          <button class="button-catalog-search">Забронировать</button>
+          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 9,2</p>
         </li>
@@ -134,18 +141,20 @@
         </p>
         <ul class="footer-social">
           <li>
-            <a class="social-button" href="#"> <span>Твиттер</span><img src="img/twitter.svg" alt="Twitter" width="46" height="48"></a>
+            <a class="social-button social-button-tw" href="#"></a>
           </li>
           <li>
-            <a class="social-button" href="#"> <span>Фейсбук</span><img src="img/fb-icon.svg" alt="Facebook" width="46" height="48"></a>
+            <a class="social-button social-button-fb" href="#"></a>
           </li>
           <li>
-            <a class="social-button" href="#"> <span>Ютуб</span><img src="img/youtube.svg" alt="Youtube" width="46" height="48"></a>
+            <a class="social-button social-button-yt" href="#"></a>
           </li>
         </ul>
       <p class="footer-copyright">
         Webcite by:
-        <a class="button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+        <div class="button-copyright">
+        <a href="https://htmlacademy.ru"></a>
+      </div>
       </p>
       </section>
       </footer>
