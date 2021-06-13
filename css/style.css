@@ -18,6 +18,9 @@
   }
   
   /* Global */
+  .page {
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+  }
 
   .page-body {
     min-width: 960px;
@@ -47,10 +50,30 @@
     align-items: center;
   }
 
-  .white-line {
-  margin-bottom: -25px;
+  .block-1 {
+    background: url("/img/welcome.svg") no-repeat;
+    width:187px;
+    height:44px;
   }
 
+  .block-2 {
+    background: url("/img/Shape.svg") no-repeat;
+    width:255px;
+    height:28px;
+  }
+
+  .block-3 {
+    background: url("/img/Shape-2.svg") no-repeat;
+    width:456px;
+    height:213px;
+  }
+
+  .block-4 {
+    background: url("/img/white-line.svg") no-repeat;
+    width:1200px;
+    height:57px;
+  }
+  
 /* Container */
 
 /*.container {
@@ -66,6 +89,7 @@
     color: var(--basic-black);
     background-color: transparent;
     text-decoration: none;
+    font-weight: bold;
   }
  
   .site-navigation {
@@ -480,18 +504,6 @@ background-image: url(/img/logo_htmlacademy-blue.svg);
 }
 
 /* Social button */
-
-.social-button-tw {
-  background-image: url(/img/twitter.svg);
-}
-
-.social-button-fb{
-  background-image: url(/img/fb-icon.svg);
-}
-
-.social-button-yt {
-  background-image: url(/img/youtube.svg);
-}
 
 .social-button  {
   display:flex;
