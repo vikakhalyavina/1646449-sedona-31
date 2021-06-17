@@ -16,28 +16,38 @@
   <body class="page-body">
 
 <header class="main-header">
+
 <nav class="main-navigation">
   <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></a>
+
+  <div class="main-navigation-wrapper ">
   <ul class="site-navigation">
-    <li><a href="blank.html">Информация</a></li>
+   <li><a href="blank.html">Информация</a></li>
     <li><a href="blank.html">Фото видео</a></li>
     <li><a href="blank.html">Карта штата</a></li>
     <li><a href="catalog.html">Гостиницы</a></li>
   </ul>
+</div>
+
 </nav>
+
 </header>
 
-<main class="page-main">
+<main class="container">
 
-  <h1 class="hide">Седона - городок в Аризоне</h1><!--скрытый заголовок-->
+  <h1 class="visually-hidden">Седона - городок в Аризоне</h1><!--скрытый заголовок-->
 
 <section class="main-image">
- <div class="block-1">  </div>
-  <div class="block-2">  </div>
-    <div class="block-3">  </div>
-      <div class="block-4">  </div>
+
+  <div class="main-images">
+    <img class="welcome-title" src="/img/welcome.svg" width="187" height="44" alt="Welcome"/>
+    <img  src="/img/Shape.svg" width="255" height="28" alt="to the gorgeous"/>
+    <img class="welcome-title" src="/img/Shape-2.svg" width="456" height="213" alt="Sedona"/>
+    <img src="/img/white-line.svg" width="1200" height="57" alt="white-line"/>
+  </div>
+    
 <section>
-  
+
   <h2 class="title">
     Седона - небольшой городок в Аризоне,<br>
     заслуживающий большего!
@@ -45,12 +55,18 @@
   <p class="subtitle">
     Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
   </p>
+
 </section>
+
 <div class="container-features">
+
 <section class="features">
-  <h2 class="hide">Преимущества</h2><!--скрытый заголовок-->
+
+  <h2 class="visually-hidden">Преимущества</h2><!--скрытый заголовок-->
   <ul class="features-list">
-    <li class="feature-item-1">
+
+    <div class="feature-item-description-picture">
+    <li class="feature-item-bg">
   <h3>
     Настоящий<br>
     городок
@@ -58,28 +74,38 @@
   <p>-№1-</p>  
   <p>Седона - не аттракцион для туристов,<br>
      там течет своя жизнь</p>
-  <img class="feature-item-img1" src="img/image1.jpg" alt="Изображение Седоны 1" width="800" height="256" />
+</li>
+ <li class="feature-item-img">
+   <img src="img/image1.jpg" alt="Изображение Седоны 1" width="800" height="256" />
   </li>
-    <li class="feature-item-icon-1">
+</div>
+
+  <div class="icons">
+    <li>
       <img  src="img/icon-1.svg" alt="Жилье" width="75" height="72" />
       <h3>Жилье</h3>
         <p>Рекомендуем пожить в настоящем<br>
            мотеле, все как в кино!</p>
     </li>
-    <li class="feature-item-icon-2">
+    <li>
       <img src="img/icon-3.svg" alt="Еда" width="75" height="70" />
       <h3>Еда</h3>
       <p>Всегда заказывайте фирменный бургер,<br>
          вы не разочаруетесь!</p>
           </li>
-           <li class="feature-item-icon-3"> 
+           <li> 
             <img src="img/icon-2.svg" alt="Сувениры" width="64" height="77" />  
             <h3>Сувениры</h3>
         <p>Не только китайского, но и местного<br>
            производства!</p>
           </li>
- <li class="feature-item-2">
-  <img class="feature-item-img-2" src="img/image2.jpg" alt="Изображение Седоны 2" width="800" height="256" />
+        </div>
+
+        <div class="feature-item-picture-description">
+ <li class="feature-item-img">
+  <img src="img/image2.jpg" alt="Изображение Седоны 2" width="800" height="256" />
+  </li>
+  <li class="feature-item-bg">
   <h3>
     Там есть<br>
     мост дьявола
@@ -87,22 +113,24 @@
 <p>-№2-</p>
 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 </li>
-<div class="feature-item-3-4-5"
-  <li class="feature-item-3">
+</div>
+
+<div class="feature-item-description">
+  <li>
     <h3>Небольшая<br>
     площадь</h3>
   <p>-№3-</p>
   <p>Все достопримечательности<br>
     находятся очень близко</p>
   </li>
-  <li class="feature-item-4">
+  <li>
     <h3>Красивая<br>
       дорога</h3>
   <p>-№4-</p>
   <p>Ехать в Седону из Лас-Вегаса совсем<br>
     не скучно!</p>
   </li>
-  <li class="feature-item-5">
+  <li>
     <h3>Мало<br>
       туристов</h3>
   <p>-№5-</p>
@@ -110,6 +138,7 @@
     толпится там</p>
   </li>
 </div>
+
 </ul>
 </section>
 </div>
@@ -119,10 +148,11 @@
   <p class="appointment-info">Укажите предполагаемые даты поездки,<br> 
     и мы покажем вам лучшие предложения гостиниц в седоне
   </p>
-  <button class="button-search">Поиск гостиницы в седоне</button>
 </section>
 
 <section>
+  <div class="form">
+  <button class="button-search">Поиск гостиницы в седоне</button>
   <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
    <p class="appointment-item">
     <label for="arrival-date">Дата заезда:</label>
@@ -146,6 +176,7 @@
   </p>
     <button class="button" type="submit">Найти</button>
   </form>
+</div>
 </section>
 
 <section>
@@ -156,28 +187,35 @@
 
 <footer class="main-footer">
 
-<section>
-  <p class="footer-slogan"><b>#visitsedona</b><br>
-    <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-  </p>
-  <ul class="footer-social">
-    <li>
-      <a class="social-button social-button-tw" href="#"><img src="img/twitter.svg" alt="Twitter" width="16" height="15"/></a>
-    </li>
-    <li>
-      <a class="social-button social-button-fb" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"/></a>
-    </li>
-    <li>
-      <a class="social-button social-button-yt" href="#"><img src="img/youtube.svg" alt="Youtube" width="20" height="16"/></a>
-    </li>
-  </ul>
-<p class="footer-copyright">
-  Webcite by:
-  <div class="button-copyright">
-  <a href="https://htmlacademy.ru"></a>
+  <section>
+    <div class="container container-footer">
+      <div class="contacts">
+    <p class="footer-slogan"><b>#visitsedona</b><br>
+      <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+    </p>
+      </div>
+      <div class="social-button-columns">
+    <ul class="footer-social">
+      <li>
+        <a class="social-button social-button-tw" href="#"><img src="img/twitter.svg" alt="Twitter" width="16" height="15"/></a>
+      </li>
+      <li>
+        <a class="social-button social-button-fb" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"/></a>
+      </li>
+      <li>
+        <a class="social-button social-button-yt" href="#"><img src="img/youtube.svg" alt="Youtube" width="20" height="16"/></a>
+      </li>
+    </ul>
+      </div>
+      <div class="copyright">
+  <p class="footer-copyright">
+    Webcite by:
+    <div class="button-copyright"> 
+      <a href="https://htmlacademy.ru"></a>
+     </p>
 </div>
-</p>
-</section>
-</footer>
-</body>
-</html>
+</div>
+  </section>
+  </footer>
+  </body>
+  </html>

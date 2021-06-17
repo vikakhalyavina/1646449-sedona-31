@@ -14,24 +14,31 @@
     
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></a>
+      
+        <div class="main-navigation-wrapper ">
         <ul class="site-navigation">
-          <li><a href="blank.html">Информация</a></li>
+         <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото видео</a></li>
-          <li><a class="main-header-logo">
-            <img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
+      </div>
+      
       </nav>
       </header>
 
 
-    <main class="page-catalog">
+    <main class="container">
 
       <section class="filters">
-        <h2 class="hide">Выбор жилья</h2>
+       
+        <h2 class="visually-hidden">Выбор жилья</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        
+          <div class="filters-column">
           <fieldset class="fieldset">
+            <div class="fieldset-info">
             <legend class="heading">Инфраструктура:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -47,9 +54,13 @@
                 <label for="type-wi-fi">WI-FI</label>
               </li>
             </ul>
+          </div>
           </fieldset>
+      
 
+       
           <fieldset class="fieldset">
+            <div class="fieldset-housing">
             <legend class="heading">Тип жилья:</legend>
       <ul>
         <li class="filter-option filter-checkbox">
@@ -65,23 +76,39 @@
           <label for="type-apartments">Апартаменты</label>
         </li>
       </ul>
+            </div>
             </fieldset>
-            <table class="table">
-              <caption class="caption">Стоимость в сутки,₽:</caption>
-              <tr>
-              <td> ОТ 0</td>
-              <td class="td">ДО 3000</td>
-              </tr>
-            </table>
-            <img src="/img/filter-button.svg" width="19" height="19" alt="Бегунок"/>
-            <img src="/img/line.svg" width="248" height="2" alt="Бегунок"/>
-            <img src="/img/filter-button.svg" width="19" height="19" alt="Бегунок"/>
-            <button class="button-catalog-show" type="submit">Показать</button>
-          </form>
-        </section>
+        
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <fieldset class="filter-item">
+                <legend>Стоимость в сутки,₽:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="3000">
+                    </label>
+                  </div>
+                </div>
+                <button class="button-catalog-show" type="submit">Показать</button>
+              </fieldset>
+            </form>
+
+        </section> 
 
         <section>
-          <h2 class="hide">Каталог</h2> <!--скрытый заголовок-->
+         
+          <div class="catalog-found">
+          <h2 class="visually-hidden">Каталог</h2> <!--скрытый заголовок-->
           <p class="search">Найдено: 3</p>
           <p class="sort">Сортировка:</p>
           <ul class="sorting-catalog">
@@ -89,45 +116,62 @@
             <li><a href="blank.html">По типу</a></li>
             <li><a href="blank.html">По рейтингу</a></li>
           </ul>
-           <div class="button-up"></div> 
-           <div class="button-down"></div> 
+          <ul class="button-up-down">
+            <li class="button-up"><a href="#"></a></li>
+            <li class="button-down"><a href="#"></a></li>
+          </ul>
+       
+        </div>
+
         </section>
 
         <section>
+
           <ul class="catalog">
-         <li> <img class="img-catalog" src="img/catalogimage1.jpg" width="135" height="90" alt="Amara Resort & Spa"/>
-          <a class="title-catalog" href="#">Amara Resort & Spa</a>
+
+            <div class="title-column title-column-border">
+         <li class="start-column"> <img class="img-catalog" src="img/catalogimage1.jpg" width="135" height="90" alt="Amara Resort & Spa"/></li>
+          <li class="center-column"><a class="title-catalog" href="#">Amara Resort & Spa</a>
           <p class="subtitle-catalog">Гостиница</p>
           <p class="subtitle-catalog">от 4000</p>
-          <button class="button-catalog-more">Подробнее</button>
-          <button class="button-catalog-search">Забронировать</button>
-          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <a  href="#" class="button-catalog-more">Подробнее</a>
+          <a href="#" class="button-catalog-search">Забронировать</a></li>
+          <li class="end-column"><img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 8,5</p>
         </li>
-        <li> <img class="img-catalog" src="img/catalogimage2.jpg" width="135" height="90" alt="Desert Quail Inn"/>
-          <a class="title-catalog" href="#">Desert Quail Inn</a>
+      </div>
+
+      <div class="title-column">
+        <li class="start-column"> <img class="img-catalog" src="img/catalogimage2.jpg" width="135" height="90" alt="Desert Quail Inn"/></li>
+          <li class="center-column"><a class="title-catalog" href="#">Desert Quail Inn</a>
           <p class="subtitle-catalog">Мотель</p>
           <p class="subtitle-catalog">от 3000</p>
-          <button class="button-catalog-more">Подробнее</button>
-          <button class="button-catalog-search">Забронировать</button>
-          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <a  href="#" class="button-catalog-more">Подробнее</a>
+          <a href="#" class="button-catalog-search">Забронировать</a></li>
+          </li>
+         <li class="end-column"><img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 8,9</p>
         </li>
-        <li> <img class="img-catalog" src="img/catalogimage3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/>
-          <a class="title-catalog" href="#">Villas at Poco Diablo</a>
+      </div>
+
+      <div class="title-column">
+        <li class="start-column"> <img class="img-catalog" src="img/catalogimage3.jpg" width="135" height="90" alt="Villas at Poco Diablo"/></li>
+         <li class="center-column"> <a class="title-catalog" href="#">Villas at Poco Diablo</a>
           <p class="subtitle-catalog">Апартаменты</p>
           <p class="subtitle-catalog">от 2000</p>
-          <button class="button-catalog-more">Подробнее</button>
-          <button class="button-catalog-search">Забронировать</button>
-          <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
+          <a  href="#" class="button-catalog-more">Подробнее</a>
+          <a href="#" class="button-catalog-search">Забронировать</a></li>
+        </li>
+         <li class="end-column"><img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <img src="img/Star.svg" width="18" height="17" alt="Рейтинг"/>
           <p class="rating">Рейтинг: 9,2</p>
         </li>
+      </div>
         </ul>
         </section>
     </main>
@@ -136,26 +180,33 @@
     <footer class="main-footer">
 
       <section>
+        <div class="container container-footer">
+          <div class="contacts">
         <p class="footer-slogan"><b>#visitsedona</b><br>
           <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
         </p>
+          </div>
+          <div class="social-button-columns">
         <ul class="footer-social">
           <li>
-            <a class="social-button social-button-tw" href="#"></a>
+            <a class="social-button social-button-tw" href="#"><img src="img/twitter.svg" alt="Twitter" width="16" height="15"/></a>
           </li>
           <li>
-            <a class="social-button social-button-fb" href="#"></a>
+            <a class="social-button social-button-fb" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"/></a>
           </li>
           <li>
-            <a class="social-button social-button-yt" href="#"></a>
+            <a class="social-button social-button-yt" href="#"><img src="img/youtube.svg" alt="Youtube" width="20" height="16"/></a>
           </li>
         </ul>
+          </div>
+          <div class="copyright">
       <p class="footer-copyright">
         Webcite by:
         <div class="button-copyright">
         <a href="https://htmlacademy.ru"></a>
-      </div>
       </p>
+    </div>
+    </div>
       </section>
       </footer>
       </body>
