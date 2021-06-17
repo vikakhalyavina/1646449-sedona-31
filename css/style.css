@@ -17,6 +17,7 @@
     --background-input-hover:#EBEBEB;
     --border:#E5E5E5;
     --toggle:#ABABAB;
+    --logo-html:#BDBBBC;
   }
 
   @font-face {
@@ -74,7 +75,8 @@
   }
 
   .welcome-title {
-    margin-top: 84px;
+    margin-top: 74px;
+    margin-bottom: 10px;
   }
   
 /* Container */
@@ -156,6 +158,7 @@ background-color: var(--basic-white);
   font-size: 30px;
   line-height: 24px;
   text-align: center;
+  margin-top: 58px;
 }
 
 .appointment-info {
@@ -180,13 +183,11 @@ background-color: var(--basic-white);
   padding: 0;
 }
 
-.feature-item {
-  margin: 0 10px;
-}
 
 .features-list h3 {
  font-size: 21px;
  line-height: 21px;
+ margin-top: 47px;
 }
 
 .features-list p {
@@ -206,6 +207,8 @@ background-color: var(--basic-white);
   background-color: var(--basic-white);
   max-width: 100%;
   height: auto;
+  width: 800px;
+  height: 256px;
 }
 
 .feature-item-description {
@@ -314,6 +317,23 @@ background-color: var(--basic-white);
 
 .appointment-form {
   text-align: center;
+  font-weight: bold;
+} 
+
+.appointment-date {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 55px;
+}
+
+.appointment-number {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 54px;
+  margin-top: 30px;
 }
 
 .appointment-item input {
@@ -324,6 +344,34 @@ background-color: var(--basic-white);
   outline-offset: 0;
 }
 
+.appointment-item-date input {
+  padding: 6px 200px 6px 13px;
+}
+
+.appointment-item-date label {
+display: inline-block;
+  margin-right: 6px;
+}
+
+.appointment-item-numder input {
+  width: 38px;
+}
+
+.appointment-item-numder label {
+  display: inline-block;
+    margin-right: 11px;
+    margin-left: 53px;
+  }
+
+  .appointment-item-numder button {
+width: 39px;
+padding: 6px;
+margin: 0;
+text-align: center;
+background-color: var(--basic-background-grey);
+border: none;
+  }
+
 .appointment-item input:hover {
   background-color:var(--background-input-hover);
 }
@@ -333,8 +381,9 @@ background-color: var(--basic-white);
 }
 
 .icon-calendar {
-  background: url(/img/calendar.svg) no-repeat center right;
-  width: 346px;
+  background: url(/img/calendar.svg) no-repeat;
+  background-position: 97% 50%; 
+ 
 }
 
 .icon-calendar:hover {
@@ -344,11 +393,21 @@ background-image: url(/img/calendar-black.svg);
 .icon-calendar:focus {
   background-image: url(/img/calendar-blue.svg);
   }
- 
- .adult,.child {
-   width: 36px;
-   text-align: center;
- }
+
+.pic-plus:hover path {
+    fill: var(--basic-black);
+  }
+
+ .pic-plus:focus path {
+    fill: var(--basic-blue);
+  }
+  .pic-minus:hover rect{
+    fill: var(--basic-black);
+  }
+
+.pic-minus:focus rect{
+    fill: var(--basic-blue);
+  }
 
 /*Filter */
 
@@ -453,7 +512,40 @@ border: none;
   .price-controls input {
     font-family: inherit;
     font-size: inherit;
+    background-color:transparent;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
   }
+
+  .filter-option label {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+    border: 2px solid var(--basic-white);
+  }
+
+  .filter-input-checkbox:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 16px;
+    width: 21px;
+    height: 16px;
+    background-image: url("/img/ok.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
 /*Sort*/
 
 .search {
@@ -522,33 +614,15 @@ margin: 0;
 padding: 0;
 }
 
-.button-up {
-background-image: url(/img/up.svg);
-width: 11px;
-height:10px;
+.button-down:hover path,
+.button-up:hover path {
+fill: var(--basic-black);
 }
 
-.button-up:hover {
-  background-image:url(/img/up-black.svg)
-}
-
-.button-up:focus {
-  background-image:url(/img/up-blue.svg)
-}
-
-.button-down {
-background-image: url(/img/down-grey.svg);
-width: 11px;
-height:10px;
-}
-
-.button-down:hover {
-  background-image:url(/img/down-black.svg)
-}
-
-.button-down:focus {
-  background-image:url(/img/down-blue.svg)
-}
+.button-down:focus path,
+.button-up:focus path {
+  fill: var(--basic-blue);
+  }
 
 .title-catalog {
   font-size: 21px;
@@ -564,6 +638,7 @@ height:10px;
 .subtitle-catalog{
   font-size: 14px;
   line-height: 21px;
+  display: inline-block;
 }
 
 .rating {
@@ -588,30 +663,30 @@ height:10px;
   width: 320px;
   color: inherit;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-social {
   text-align: center;
-  width: 145px;
+  width: 200px;
   list-style: none;
 }
 
 .footer-copyright {
-  max-width: 150px;
+  max-width: 300px;
 }
 
-.button-copyright {
-  background-image: url(/img/logo_htmlacademy.svg);
-  width:115px;
-  height:33px;
+.button-copyright a:hover path{
+  fill: var(--basic-blue);
 }
 
-.button-copyright:hover {
-background-image: url(/img/logo_htmlacademy-blue.svg);
+.button-copyright a:focus path{
+  fill: var(--logo-html);
 }
 
-.button-copyright a:focus {
-  background-image: url(/img/logo_htmlacademy-grey.svg);
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Social button */
@@ -620,7 +695,7 @@ background-image: url(/img/logo_htmlacademy-blue.svg);
   display:flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 6px;
   background-color: var(--basic-blue);
   background-position: center;
   background-repeat: no-repeat;
@@ -636,28 +711,6 @@ background-image: url(/img/logo_htmlacademy-blue.svg);
   background-color: var(--focus-blue);
 } 
 
-/*Table-catalog
-
-.table {
-  border: 3px solid white;
-  width: 317px;
-  height: 36px;
-  text-align: center;
-}
-
-.caption {
-  caption-side: top;
-  text-align: left;
-  font-size: 16px;
-  line-height: 21px;
-  margin-bottom: 10px;
-}
-
-.td {
-  border-left: 3px solid white;
-  width: 159px;
-}*/
-
 /*Grid*/
 
 .feature-item-description {
@@ -670,6 +723,8 @@ background-image: url(/img/logo_htmlacademy-blue.svg);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 124px;
+  margin-top: 64px;
+  margin-bottom: 82px;
 } 
 
 .feature-item-description-picture {
@@ -722,14 +777,9 @@ grid-template-columns: 1fr 1fr 2fr;
 height: 217px;
 }
 
-.table-column {
-margin-left: 100px;
-}
-
 .title-column-border {
   border-top: 1px var(--border) solid;
 }
-
 
 .title-column {
   border-bottom: 1px var(--border) solid;
