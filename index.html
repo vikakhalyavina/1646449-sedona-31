@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-    <link rel="icon" href="favicon/favicon.ico">
+   <!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic">
+    --> <link rel="icon" href="favicon/favicon.ico">
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
@@ -15,38 +15,40 @@
 
   <body class="page-body">
 
+    <div class="container">
+
 <header class="main-header">
 
-<nav class="main-navigation">
-  <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></a>
+<nav class="main-navigation main-navigation-wrapper">
+  <a class="main-header-logo"><img src="../img/logo.png" width="138" height="70" alt="логотип Cedona"></a>
 
-  <div class="main-navigation-wrapper ">
+  
   <ul class="site-navigation">
    <li><a href="blank.html">Информация</a></li>
     <li><a href="blank.html">Фото видео</a></li>
     <li><a href="blank.html">Карта штата</a></li>
     <li><a href="catalog.html">Гостиницы</a></li>
   </ul>
-</div>
+
 
 </nav>
 
 </header>
 
-<main class="container">
+<main>
 
   <h1 class="visually-hidden">Седона - городок в Аризоне</h1><!--скрытый заголовок-->
 
 <section class="main-image">
 
   <div class="main-images">
-    <img class="welcome-title" src="/img/welcome.svg" width="187" height="44" alt="Welcome"/>
-    <img  src="/img/Shape.svg" width="255" height="28" alt="to the gorgeous"/>
-    <img class="welcome-title" src="/img/Shape-2.svg" width="456" height="213" alt="Sedona"/>
-    <img src="/img/white-line.svg" width="1200" height="57" alt="white-line"/>
+    <img class="welcome-title" src="../img/welcome.svg" width="187" height="44" alt="welcome"/>
+    <img  src="../img/Shape.svg" width="255" height="28" alt="to the gorgeous"/>
+    <img class="welcome-title" src="../img/Shape-2.svg" width="456" height="213" alt="sedona"/>
+    <img src="../img/white-line.svg" width="1200" height="57" alt="white-line"/>
   </div>
     
-<section>
+</section>
 
   <h2 class="title">
     Седона - небольшой городок в Аризоне,<br>
@@ -56,16 +58,17 @@
     Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!
   </p>
 
-</section>
+
 
 <div class="container-features">
 
 <section class="features">
 
   <h2 class="visually-hidden">Преимущества</h2><!--скрытый заголовок-->
-  <ul class="features-list">
-
-    <div class="feature-item-description-picture">
+ 
+  <div class="features-list">
+<ul class="feature-item-description-picture">
+   
     <li class="feature-item-bg">
   <h3>
     Настоящий<br>
@@ -76,34 +79,34 @@
      там течет своя жизнь</p>
 </li>
  <li class="feature-item-img">
-   <img src="img/image1.jpg" alt="Изображение Седоны 1" width="800" height="256" />
+   <img src="../img/image1.jpg" alt="изображение Седоны 1" width="800" height="256" />
   </li>
-</div>
+</ul>
 
-  <div class="icons">
+  <ul class="icons">
     <li>
-      <img  src="img/icon-1.svg" alt="Жилье" width="75" height="72" />
+      <img  src="../img/icon-1.svg" alt="жилье" width="75" height="72" />
       <h3>Жилье</h3>
         <p>Рекомендуем пожить в настоящем<br>
            мотеле, все как в кино!</p>
     </li>
     <li>
-      <img src="img/icon-3.svg" alt="Еда" width="75" height="70" />
+      <img src="../img/icon-3.svg" alt="еда" width="75" height="70" />
       <h3>Еда</h3>
       <p>Всегда заказывайте фирменный бургер,<br>
          вы не разочаруетесь!</p>
           </li>
            <li> 
-            <img src="img/icon-2.svg" alt="Сувениры" width="64" height="77" />  
+            <img src="../img/icon-2.svg" alt="сувениры" width="64" height="77" />  
             <h3>Сувениры</h3>
         <p>Не только китайского, но и местного<br>
            производства!</p>
           </li>
-        </div>
+  </ul>
 
-        <div class="feature-item-picture-description">
+        <ul class="feature-item-picture-description">
  <li class="feature-item-img">
-  <img src="img/image2.jpg" alt="Изображение Седоны 2" width="800" height="256" />
+  <img src="../img/image2.jpg" alt="изображение Седоны 2" width="800" height="256" />
   </li>
   <li class="feature-item-bg">
   <h3>
@@ -113,9 +116,9 @@
 <p>-№2-</p>
 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 </li>
-</div>
+        </ul>
 
-<div class="feature-item-description">
+<ul class="feature-item-description">
   <li>
     <h3>Небольшая<br>
     площадь</h3>
@@ -137,9 +140,9 @@
   <p>Большинство едет в гранд-каньон и<br>
     толпится там</p>
   </li>
-</div>
-
 </ul>
+
+</div>
 </section>
 </div>
 
@@ -170,7 +173,7 @@
     <button  class="pic-minus" type="button" name="minus-adult"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="12" height="3" fill="#A9A9A9"/>
       </svg></button>
-    <input class="adult" type="text" name="number-adult" value="2" id="number-adult">
+    <input class="adult" type="text" name="number-adult" value="2" id="adult">
     <button class="pic-plus" type="button" name="plus-adult"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
       </svg>
@@ -181,7 +184,7 @@
     <button  class="pic-minus" type="button" name="minus-adult"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="12" height="3" fill="#A9A9A9"/>
       </svg></button>
-    <input class="child" type="text" name="number-child" value="0" id="number-child">
+    <input class="child" type="text" name="number-child" value="0" id="child">
     <button class="pic-plus" type="button" name="plus-adult"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
       </svg>
@@ -190,11 +193,10 @@
 </div>
     <button class="button" type="submit">Найти</button>
   </form>
-
 </section>
 
 <section>
-  <img src="img/map.jpg" alt="Карта Седоны" width="1199" height="594" />
+  <img src="../img/map.jpg" alt="карта Седоны" width="1199" height="594" />
 </section>
 
 </main>
@@ -211,19 +213,19 @@
       <div class="social-button-columns">
     <ul class="footer-social">
       <li>
-        <a class="social-button social-button-tw" href="#"><img src="img/twitter.svg" alt="Twitter" width="16" height="15"/></a>
+        <a class="social-button social-button-tw" href="#"><img src="../img/twitter.svg" alt="twitter" width="16" height="15"/></a>
       </li>
       <li>
-        <a class="social-button social-button-fb" href="#"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"/></a>
+        <a class="social-button social-button-fb" href="#"><img src="../img/fb-icon.svg" alt="facebook" width="12" height="22"/></a>
       </li>
       <li>
-        <a class="social-button social-button-yt" href="#"><img src="img/youtube.svg" alt="Youtube" width="20" height="16"/></a>
+        <a class="social-button social-button-yt" href="#"><img src="../img/youtube.svg" alt="youtube" width="20" height="16"/></a>
       </li>
     </ul>
       </div>
       <div class="copyright">
   <p class="footer-copyright">
-    Webcite by:
+    Webcite by </p>
     <div class="button-copyright"> 
       <a href="https://htmlacademy.ru"><svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 12.8691V15.4429H2.45789V12.8691H0Z" fill="black"/>
@@ -239,10 +241,12 @@
         <path d="M98.1985 17.8762C96.5713 17.8762 95.3295 18.6651 94.6443 19.9232H94.5799C93.9591 18.6865 92.8029 17.8762 91.2184 17.8762C89.8054 17.8762 88.7347 18.6225 88.0924 19.6673H88.0068V18.1534H86.0583V28.7079H88.0924V23.2921C88.0924 21.3091 89.1417 19.8592 90.7261 19.8165C92.2247 19.7739 93.1028 20.84 93.1028 22.4392V28.7079H95.1368V23.1215C95.1368 20.7547 96.5499 19.8165 97.7703 19.8165C99.2477 19.8165 100.125 20.84 100.125 22.4392V28.7079H102.16V22.226C102.16 19.6673 100.704 17.8762 98.1985 17.8762Z" fill="black"/>
         <path d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z" fill="black"/>
         </svg></a>
-     </p>
+     
+</div>
 </div>
 </div>
   </section>
   </footer>
+</div>
   </body>
   </html>
