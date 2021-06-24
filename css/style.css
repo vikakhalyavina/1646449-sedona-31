@@ -491,6 +491,8 @@ background-color: var(--basic-white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: absolute;
+  background: var(--basic-white);
 } 
 
 .appointment-date {
