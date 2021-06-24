@@ -12,38 +12,195 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-
   <body class="page-body">
 
-<header class="main-header">
+    <div class="container">
 
-<nav class="main-navigation main-navigation-wrapper">
-  <a class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип Cedona"></a>
+
+    <header class="main-header">
+
+
+      <nav class="main-navigation main-navigation-wrapper">
+     
+       <a class="logo"><img src="img/logo.png" width="138" height="70" alt="логотип Cedona"></a>
+      
+       <ul class="site-navigation">
+        <li><a href="blank.html">Информация</a></li>
+         <li><a href="blank.html">Фото видео</a></li>
+         <li><a href="blank.html">Карта штата</a></li>
+         <li><a href="catalog.html">Гостиницы</a></li>
+       </ul>
+     
+     </nav>
+     
+     
+     </header>
+     
+
+<main>
+
+  <section class="main-image">
+
+    <div class="main-images">
+     <!--<img class="welcome-title" src="../img/welcome.svg" width="187" height="44" alt="welcome"/>
+      <img  src="../img/Shape.svg" width="255" height="28" alt="to the gorgeous"/>
+      <img class="welcome-title" src="../img/Shape-2.svg" width="456" height="213" alt="sedona"/>
+      <img src="../img/white-line.svg" width="1200" height="57" alt="white-line"/>-->
+    </div>
+      
+  </section>
 
   
-  <ul class="site-navigation">
-   <li><a href="blank.html">Информация</a></li>
-    <li><a href="blank.html">Фото видео</a></li>
-    <li><a href="blank.html">Карта штата</a></li>
-    <li><a href="catalog.html">Гостиницы</a></li>
+
+    <section class="features">
+    
+      <h2 class="visually-hidden">Преимущества</h2><!--скрытый заголовок-->
+     
+      
+
+    <ul class="features-item-list">
+
+      <li class="features-item-picture">
+        <div class="feature-item-bg feature-item-description-picture">
+      <h3>
+        Настоящий<br>
+        городок
+      </h3>
+      <p>-№1-</p>  
+      <p>Седона - не аттракцион для туристов,<br>
+         там течет своя жизнь</p>
+      </div>
+
+<ul class="features-item-advantage">
+
+        <li class="feature-item">
+       <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем<br>
+               мотеле, все как в кино!</p>
+        </li>
+
+        <li class="feature-item">
+        <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер,<br>
+             вы не разочаруетесь!</p>
+              </li>
+
+               <li class="feature-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного<br>
+               производства!</p>
+              </li>
+              </ul>
+              </li>
+           
+    <li class="features-item-picture">
+      <div class="feature-item-bg feature-item-picture-description">
+      <h3>
+        Там есть<br>
+        мост дьявола
+      </h3>
+    <p>-№2-</p>
+    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      </div>
+    </li>
   </ul>
+      
+    <ul class="feature-item-description">
+      <li class="description">
+        <h3>Небольшая<br>
+        площадь</h3>
+      <p>-№3-</p>
+      <p>Все достопримечательности<br>
+        находятся очень близко</p>
+      </li>
+
+      <li class="description">
+        <h3>Красивая<br>
+          дорога</h3>
+      <p>-№4-</p>
+      <p>Ехать в Седону из Лас-Вегаса совсем<br>
+        не скучно!</p>
+      </li>
+
+      <li class="description">
+        <h3>Мало<br>
+          туристов</h3>
+      <p>-№5-</p>
+      <p>Большинство едет в гранд-каньон и<br>
+        толпится там</p>
+      </li>
+
+    </ul>
+
+    </section>
+
+  
+    
 
 
-</nav>
+    <button class="button-search">Поиск гостиницы в седоне</button>
+  <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+  
+  <div class="appointment-date">
+    <p class="appointment-item">
+    <label for="arrival-date">Дата заезда:</label>
+    <input class="icon-calendar" id="arrival-date" type="text" name="date" placeholder="24 апреля 2017" >
+  </p>
+  <p class="appointment-item">
+    <label for="date-departure">Дата выезда:</label>
+    <input class="icon-calendar" id="date-departure" type="text" name="date" placeholder="4 июля 2017">
+  </p>
+</div>
 
-</header>
+<div class="appointment-number">
+
+  <p class="appointment-item appointment-item-numder">
+    <label for="adult">Взрослые:</label>
+    <button  class="pic-minus" type="button" name="minus-adult"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="12" height="3" fill="#A9A9A9"/>
+      </svg></button>
+    <input class="adult" type="text" name="number-adult" value="2" id="adult">
+    <button class="pic-plus" type="button" name="plus-adult"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+      </svg>
+      </button>
+  </p>
+
+  <p class="appointment-item appointment-item-numder">
+    <label for="child">Дети:</label>
+    <button  class="pic-minus" type="button" name="minus-adult"><svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="12" height="3" fill="#A9A9A9"/>
+      </svg></button>
+    <input class="child" type="text" name="number-child" value="0" id="child">
+    <button class="pic-plus" type="button" name="plus-adult"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+      </svg>
+      </button>
+  </p>
+</div>
+    <button class="button" type="submit">Найти</button>
+  </form> 
+</main>
 
 
 
 <footer class="main-footer">
 
   <section>
+    
+    
+    
     <div class="container container-footer">
+     
+     
       <div class="contacts">
     <p class="footer-slogan"><b>#visitsedona</b><br>
       <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
     </p>
       </div>
+    
+    
+    
       <div class="social-button-columns">
     <ul class="footer-social">
       <li>
