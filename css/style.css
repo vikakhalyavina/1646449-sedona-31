@@ -933,8 +933,9 @@ margin-left: 73px;
 
 .main-footer {
   color: var(--basic-black);
-  background-color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 3000px;
 }
 
 .footer-phone {
