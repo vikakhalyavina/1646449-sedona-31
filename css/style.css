@@ -52,7 +52,7 @@
   line-height: 26px;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--background);
   background-position: top center;
   background-repeat: no-repeat;
 
@@ -101,6 +101,7 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+   background-color: var(--basic-white);
   box-shadow: 0px 0px 15px 5px rgb(0 1 1 / 20%);
 }
 
@@ -113,6 +114,28 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.site-navigation li {
+width: 260px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(1) {
+  margin-left: 73px;
+} 
+
+.site-navigation li:nth-child(4) {
+  margin-right: 73px;
+} 
 
 .main-header {
   display: flex;
@@ -150,27 +173,6 @@
   background-color: var(--basic-white);
 }
 
-.site-navigation li:nth-child(1) {
-  padding-left: 73px;
-}
-
-.site-navigation li:nth-child(2) {
-  padding-left: 100px;
-  padding-right: 420px;
-}
-
-.site-navigation li:nth-child(3) {
-  padding-right: 100px;
-}
-
-.site-navigation li:nth-child(4) {
-  padding-right: 73px;
-}
-
-.site-navigation li:nth-child(3) {
-  padding-left: 1px;
-}
-
 .site-navigation a:hover {
   color: var(--basic-blue);
 }
@@ -200,6 +202,8 @@
   margin-bottom: 51px;
   text-align: center;
 }
+
+/*Question-form*/
 
 .question {
   font-size: 30px;
@@ -364,6 +368,7 @@
   width: 458px;
   height: 58px;
   margin-bottom: 55px;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -386,6 +391,7 @@
   width: 568px;
   height: 86px;
   margin-left: 316px;
+  cursor: pointer;
 }
 
 .button-search:hover {
@@ -406,6 +412,7 @@
   background-color: transparent;
   border: 2px solid var(--basic-white);
   margin-top: 33px;
+  cursor: pointer;
 }
 
 .button-catalog-show:hover {
@@ -423,6 +430,7 @@
   text-decoration: none;
   padding: 3px 17px;
   border: none;
+  cursor: pointer;
 }
 
 .button-catalog-more:hover {
@@ -434,7 +442,7 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button-catalog-search {
+.button-catalog-reserve {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -444,13 +452,14 @@
   text-decoration: none;
   padding: 3px 17px;
   border: none;
+  cursor: pointer;
 }
 
-.button-catalog-search:hover {
+.button-catalog-reserve:hover {
   background-color: var(--hover-brown);
 }
 
-.button-catalog-search:active {
+.button-catalog-reserve:active {
   background-color: var(--active-brown);
   color: rgba(255, 255, 255, 0.3);
 }
@@ -477,6 +486,7 @@
   border: none;
   outline: 0;
   outline-offset: 0;
+  cursor: pointer;
 }
 
 /*Appointment-date*/
@@ -495,9 +505,11 @@
 
 .appointment-date label {
   margin-right: 6px;
+  cursor: pointer;
 }
 
-.appointment-date input:hover {
+.appointment-date input:hover,
+.appointment-number input:hover {
   background-color: var(--background-input-hover);
 }
 
@@ -517,6 +529,7 @@
   padding: 0;
   right: 60px;
   top: 20px;
+  cursor: pointer;
 }
 
 .icon-calendar-date-departure {
@@ -529,6 +542,7 @@
   padding: 0;
   right: 60px;
   top: 90px;
+  cursor: pointer;
 }
 
 .icon-calendar-arrival-date:hover path,
@@ -557,8 +571,16 @@
   text-align: center;
 }
 
+.appointment-number input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--border);
+  width: 33px;
+  height: 31px;
+}
+
 .adult-label {
   margin-right: 64px;
+  cursor: pointer;
 }
 
 .adult-input {
@@ -567,10 +589,11 @@
 
 .child-label {
   margin-right: 45px;
+  cursor: pointer;
 }
 
 .child-input {
-  margin-left: 10px;
+  margin-left: 11px;
 }
 
 .pic-minus {
@@ -607,6 +630,7 @@
   background-color: var(--basic-background-grey);
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .pic-plus:hover path {
@@ -902,7 +926,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .sorting-catalog li {
-  position: relative;
   margin-right: 33px;
 }
 
@@ -921,9 +944,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .button-up-down {
   list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin-left: 400px;
+  display: flex; 
+  margin-left: 390px;
 }
 
 .button-down {
@@ -934,8 +956,6 @@ input[type="number"]::-webkit-inner-spin-button {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-right: 73px;
-  margin-left: 73px;
 }
 
 .button-down:hover path,
@@ -956,8 +976,6 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-top: 23px;
-  margin-bottom: 7px;
 }
 
 .title-catalog:hover {
@@ -972,7 +990,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 21px;
   display: inline-block;
-  margin-bottom: 15px;
+  
 }
 
 .rating {
@@ -990,16 +1008,19 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: flex-end;
 }
 
+
+
 /* Main footer */
 
 .main-footer {
   color: var(--basic-black);
   background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 
 .absolute-footer {
   position: absolute;
-  top: 2580px;
+  top: 2582px;
 }
 
 .footer-phone {
@@ -1010,7 +1031,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .footer-social {
-  text-align: center;
   width: 200px;
   list-style: none;
   display: flex;
@@ -1066,7 +1086,6 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-self: start;
   margin-left: 136px;
   margin-top: 23px;
-  text-align: center;
   font-size: 21px;
   font-style: bold;
   line-height: 26px;
@@ -1102,24 +1121,38 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .title-column-border {
   border-top: 1px var(--border) solid;
+  
+  
 }
 
 .title-column {
   border-bottom: 1px var(--border) solid;
   margin: 0;
   padding: 0;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 73px;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
+  
 }
 
 .end-column {
   justify-self: end;
 }
 
-.start-column {
+.start-column img{
   justify-self: start;
+  width: 135px;
+  height: 90px;
+}
+
+.center-column {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reserve-catalog {
+  margin-left: 6px;
 }
 
 /* Modal map */
