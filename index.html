@@ -6,7 +6,8 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic"/>
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic"
+    />
     <link rel="icon" href="favicon/favicon.ico" />
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
@@ -23,10 +24,11 @@
               src="img/logo.png"
               width="138"
               height="70"
-              alt="логотип sedona"/></a>
-              <ul class="site-navigation">
+              alt="логотип sedona"
+          /></a>
+          <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото видео</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
@@ -35,10 +37,9 @@
       <main>
         <section class="main-image">
           <h1 class="visually-hidden">Седона - городок в Аризоне</h1>
-          <!--скрытый заголовок-->
         </section>
         <h2 class="title">
-          Седона - небольшой городок в Аризоне,<br />
+          Седона &mdash; небольшой городок в Аризоне,<br />
           заслуживающий большего!
         </h2>
         <p class="subtitle">
@@ -46,7 +47,6 @@
         </p>
         <section class="features">
           <h2 class="visually-hidden">Преимущества</h2>
-          <!--скрытый заголовок-->
           <ul class="features-item-list">
             <li class="features-item-picture">
               <div class="feature-item-bg feature-item-description-picture">
@@ -54,15 +54,17 @@
                   Настоящий<br />
                   городок
                 </h3>
-                <p>-№1-</p>
+                <p class="feature-item-description-picture-number">
+                  &mdash;№1&mdash;
+                </p>
                 <p>
-                  Седона - не аттракцион для туристов,<br />
-                  там течет своя жизнь
+                  Седона &mdash; не аттракцион для туристов, там<br />
+                  течет своя жизнь
                 </p>
               </div>
               <ul class="features-item-advantage">
                 <li class="feature-item">
-                  <h3>Жилье</h3>
+                  <h3>Жильё</h3>
                   <p>
                     Рекомендуем пожить в настоящем<br />
                     мотеле, все как в кино!
@@ -90,8 +92,11 @@
                   Там есть<br />
                   мост дьявола
                 </h3>
-                <p>-№2-</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="features-item-picture-description-number">&mdash;№2&mdash;</p>
+                <p>
+                  Да, по нему можно пройти! Если конечно <br />
+                  вы осмелитесь
+                </p>
               </div>
             </li>
             <li>
@@ -101,7 +106,7 @@
                     Небольшая<br />
                     площадь
                   </h3>
-                  <p>-№3-</p>
+                  <p class="features-description-number">&mdash;№3&mdash;</p>
                   <p>
                     Все достопримечательности<br />
                     находятся очень близко
@@ -112,7 +117,7 @@
                     Красивая<br />
                     дорога
                   </h3>
-                  <p>-№4-</p>
+                  <p class="features-description-number">&mdash;№4&mdash;</p>
                   <p>
                     Ехать в Седону из Лас-Вегаса совсем<br />
                     не скучно!
@@ -123,10 +128,10 @@
                     Мало<br />
                     туристов
                   </h3>
-                  <p>-№5-</p>
+                  <p class="features-description-number">&mdash;№5&mdash;</p>
                   <p>
-                    Большинство едет в гранд-каньон и<br />
-                    толпится там
+                    Большинство едет в гранд-каньон<br />
+                    и толпится там
                   </p>
                 </li>
               </ul>
@@ -134,7 +139,7 @@
           </ul>
         </section>
         <section class="appointment">
-          <h2 class="question">Заинтересовались?</h2>
+          <h2 class="question-form">Заинтересовались?</h2>
           <p class="appointment-info">
             Укажите предполагаемые даты поездки,<br />
             и мы покажем вам лучшие предложения гостиниц в седоне
@@ -145,30 +150,35 @@
           <form
             class="appointment-form"
             action="https://echo.htmlacademy.ru"
-            method="post">
+            method="post"
+          >
             <div class="appointment-date">
-              <p class="appointment-item appointment-item-date">
+              <p class="appointment-item arrival-date">
                 <label for="arrival-date">Дата заезда:</label>
                 <input
                   id="arrival-date"
                   type="text"
                   name="date"
-                  value="24 апреля 2017"/>
+                  value="24 апреля 2017"
+                />
                 <button
                   class="icon-calendar-arrival-date"
                   type="button"
-                  name="icon-calendar">
+                  name="icon-calendar"
+                >
                   <svg
                     width="21"
                     height="23"
                     viewBox="0 0 21 23"
                     fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
                       d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z"
-                      fill="#A9A9A9"/>
+                      fill="#A9A9A9"
+                    />
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -178,7 +188,7 @@
                   </svg>
                 </button>
               </p>
-              <p class="appointment-item appointment-item-date">
+              <p class="appointment-item date-departure">
                 <label for="date-departure">Дата выезда:</label>
                 <input
                   class=""
@@ -255,7 +265,11 @@
               </p>
               <p class="appointment-item appointment-item-number">
                 <label class="child-label" for="child">Дети:</label>
-                <button class="pic-minus pic-minus-child" type="button" name="minus-adult">
+                <button
+                  class="pic-minus pic-minus-child"
+                  type="button"
+                  name="minus-adult"
+                >
                   <svg
                     width="12"
                     height="3"
@@ -273,7 +287,11 @@
                   value="0"
                   id="child"
                 />
-                <button class="pic-plus pic-plus-child" type="button" name="plus-adult">
+                <button
+                  class="pic-plus pic-plus-child"
+                  type="button"
+                  name="plus-adult"
+                >
                   <svg
                     width="11"
                     height="11"
@@ -291,14 +309,14 @@
                 </button>
               </p>
             </div>
-            <button class="button" type="submit">Найти</button>
+            <button class="button-found" type="submit">Найти</button>
           </form>
         </section>
         <section class="modal modal-map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.18050598487!2d-111.83015804319123!3d34.85437338101911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1624552137516!5m2!1sru!2sru"
             width="1200"
-            height="594"    
+            height="594"
             allowfullscreen=""
             loading="lazy"
           ></iframe>
@@ -306,10 +324,12 @@
       </main>
       <footer class="main-footer absolute-footer">
         <section class="position-footer">
-          <div class="container container-footer">
+          <div class="container-footer">
             <div class="contacts">
               <p class="footer-slogan">
-                <b>#visitsedona</b><br />
+                <b>#visitsedona</b>
+              </p>
+              <p class="footer-phone">
                 <a class="footer-phone" href="tel:+78005558628"
                   >+7 800 555-86-28</a
                 >
@@ -347,7 +367,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <p class="footer-copyright">Webcite by</p>
+              <p class="footer-copyright">Website by</p>
               <div class="button-copyright">
                 <a href="https://htmlacademy.ru/intensive/htmlcss"
                   ><svg
@@ -404,7 +424,8 @@
                     <path
                       d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z"
                       fill="black"
-                    /></svg></a>
+                    /></svg
+                ></a>
               </div>
             </div>
           </div>

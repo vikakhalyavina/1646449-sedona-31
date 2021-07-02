@@ -28,7 +28,7 @@
           /></a>
           <ul class="site-navigation">
             <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото видео</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
             <li><a href="blank.html">Карта штата</a></li>
             <li><a href="catalog.html">Гостиницы</a></li>
           </ul>
@@ -44,7 +44,7 @@
               action="https://echo.htmlacademy.ru"
             >
               <fieldset class="fieldset fieldset-info">
-                <legend class="heading">Инфраструктура:</legend>
+                <legend class="heading-info">Инфраструктура:</legend>
                 <ul>
                   <li class="filter-option filter-checkbox">
                     <input
@@ -77,7 +77,7 @@
                 </ul>
               </fieldset>
               <fieldset class="fieldset fieldset-housing">
-                <legend class="heading">Тип жилья:</legend>
+                <legend class="heading-house">Тип жилья:</legend>
                 <ul>
                   <li class="filter-option filter-checkbox">
                     <input
@@ -182,10 +182,10 @@
         </section>
         <section>
           <div class="catalog">
-            <ul class="title-column title-column-border">
+            <ul class="title-column">
               <li class="start-column">
                 <img
-                  class="img-catalog"
+                  class="img-catalog-start"
                   src="img/amara-resort-spa.jpg"
                   width="135"
                   height="90"
@@ -193,19 +193,18 @@
                 />
               </li>
               <li class="center-column">
-                <a class="title-catalog" href="#">Amara Resort & Spa</a>
+                <a class="title-catalog title-catalog-start" href="#">Amara Resort & Spa</a>
                <div class="description-catalog">
-                 <p class="subtitle-catalog">Гостиница</p> <br />
+                 <p class="subtitle-catalog subtitle-catalog-start">Гостиница</p>
                 <a href="#" class="button-catalog-more">Подробнее</a> 
               </div>
               <div class="reserve-catalog">
-                <p class="subtitle-catalog">от 4000</p>
-                <br />
+                <p class="subtitle-catalog subtitle-catalog-start rub-catalog">от 4000</p>
                 <a href="#" class="button-catalog-reserve">Забронировать</a>
               </div>
               </li>
               <li class="end-column">
-                <div class="rating-stars">
+                <div class="rating-stars rating-stars-start">
                   <div class="stars">
                     <img
                       src="img/Star.svg"
@@ -232,14 +231,14 @@
                       alt="рейтинг"
                     />
                   </div>
-                  <p class="rating">Рейтинг: 8,5</p>
+                  <p class="rating rating-start">Рейтинг: 8,5</p>
                 </div>
               </li>
             </ul>
             <ul class="title-column">
               <li class="start-column">
                 <img
-                  class="img-catalog"
+                  class="img-catalog-center"
                   src="img/desert-quail-inn.jpg"
                   width="135"
                   height="90"
@@ -247,22 +246,22 @@
                 />
               </li>
               <li class="center-column">
-                <a class="title-catalog" href="#">Desert Quail Inn</a>
+                <a class="title-catalog title-catalog-center" href="#">Desert Quail Inn</a>
                 <div class="description-catalog">
-<p class="subtitle-catalog">Мотель</p>
-                   <br />
+<p class="subtitle-catalog subtitle-catalog-center">Мотель</p>
+                   
                     <a href="#" class="button-catalog-more">Подробнее</a>
                 </div>
                 
                  <div class="reserve-catalog">
-                <p class="subtitle-catalog">от 3000</p>
-                <br />
+                <p class="subtitle-catalog subtitle-catalog-center rub-catalog">от 3000</p>
+                
                
                 <a href="#" class="button-catalog-reserve">Забронировать</a>
              </div>
               </li>
               <li class="end-column">
-                <div class="rating-stars">
+                <div class="rating-stars rating-stars-center">
                   <div class="stars">
                     <img
                       src="img/Star.svg"
@@ -283,7 +282,7 @@
                       alt="рейтинг"
                     />
                   </div>
-                  <p class="rating">Рейтинг: 8,9</p>
+                  <p class="rating rating-center">Рейтинг: 8,9</p>
                 </div>
               </li>
             </ul>
@@ -300,13 +299,13 @@
               <li class="center-column">
                 <a class="title-catalog" href="#">Villas at Poco Diablo</a>
                 <div class="description-catalog">
- <p class="subtitle-catalog">Апартаменты</p>
-  <br />
+ <p class="subtitle-catalog subtitle-catalog-end">Апартаменты</p>
+  
   <a href="#" class="button-catalog-more">Подробнее</a>
                 </div>
                  <div class="reserve-catalog">
-                <p class="subtitle-catalog">от 2000</p>
-                <br />
+                <p class="subtitle-catalog subtitle-catalog-end rub-catalog">от 2000</p>
+                
                 <a href="#" class="button-catalog-reserve">Забронировать</a>
               </div>
               </li>
@@ -326,19 +325,21 @@
                       alt="рейтинг"
                     />
                   </div>
-                  <p class="rating">Рейтинг: 9,2</p>
+                  <p class="rating rating-end">Рейтинг: 9,2</p>
                 </div>
               </li>
             </ul>
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+     <footer class="main-footer">
         <section class="position-footer">
-          <div class="container container-footer">
+          <div class="container-footer">
             <div class="contacts">
               <p class="footer-slogan">
-                <b>#visitsedona</b><br />
+                <b>#visitsedona</b>
+              </p>
+              <p class="footer-phone">
                 <a class="footer-phone" href="tel:+78005558628"
                   >+7 800 555-86-28</a
                 >
@@ -376,7 +377,7 @@
               </ul>
             </div>
             <div class="copyright">
-              <p class="footer-copyright">Webcite by</p>
+              <p class="footer-copyright">Website by</p>
               <div class="button-copyright">
                 <a href="https://htmlacademy.ru/intensive/htmlcss"
                   ><svg
