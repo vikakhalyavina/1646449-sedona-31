@@ -397,11 +397,11 @@ width: 100px;
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-white);
-  width: 458px;
-  height: 58px;
+  width: 100%;
   background-color: var(--basic-blue);
   border: none;
   cursor: pointer;
+  margin-top: 28px;
 }
 
 .button:hover {
@@ -438,14 +438,20 @@ width: 100px;
    position: absolute;
   font-weight: bold;
   text-transform: uppercase;
-  width: 568px;
-  height: 395px;
-  margin-left: 315px;
+   width: 458px;
+  height: 286px;
+   margin-left: 316px;
   background: var(--basic-white);
    box-shadow: 0px 7px 15px 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 55px;
+}
+
+.appointment-item {
+  padding: 0;
+  margin: 0;
 }
 
 .appointment-item input {
@@ -464,40 +470,37 @@ width: 100px;
 
 .appointment-date {
   position: relative;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-
-.appointment-date input {
-  width: 330px;
-  height: 20px;
-  padding: 9px 0;
-  padding-left: 16px;
-}
-
-.appointment-date label {
-    margin-top: 6px;
+ 
+.arrival-date  label {
+  margin-right: 20px;
   cursor: pointer;
 }
 
-.arrival-date {
-  margin-top: 56px;
- margin-bottom: 0;
-}
-
-.arrival-date label {
- margin-right: 18px;
-}
-
-.date-departure  {
+.arrival-date input{
+   width: 332px;
   margin: 0;
+  padding: 0;
+padding: 11px 0;
+padding-left: 14px;
+}  
+
+.date-departure {
+  margin: 0;
+  margin-top: 28px;
 }
 
-.date-departure label{
-  margin-right: 14px;
+.date-departure label {
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.date-departure  input {
+  width: 333px;
+  margin: 0;
+  padding: 0;
+padding: 11px 0;
+    padding-left: 13px;
 }
 
 .appointment-date input:hover,
@@ -508,8 +511,8 @@ width: 100px;
 .appointment-date input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--border);
-  padding: 7px 0;
-  padding-left: 16px;
+  padding: 9px 0;
+  padding-left: 9px;
 }
 
 .icon-calendar-arrival-date {
@@ -520,8 +523,8 @@ width: 100px;
   background: transparent;
   margin: 0;
   padding: 0;
-  right: 63px;
-  top: 62px;
+  right: 10px;
+  top: 7px;
   cursor: pointer;
 }
 
@@ -533,8 +536,8 @@ width: 100px;
   background: transparent;
   margin: 0;
   padding: 0;
-  right: 63px;
-  top: 130px;
+  right: 10px;
+  top: 73px;
   cursor: pointer;
 }
 
@@ -551,88 +554,84 @@ width: 100px;
 /*Appointment-number*/
 
 .appointment-number {
-   width: 470px;
+    width: 458px;
+     height: 40px;
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .appointment-number input {
-  text-align: center;
-  width: 39px;
-  height: 36px;
-  margin-top: 3px;
+   width: 40px;
+      height: 37px;
+    background-color: var(--basic-background-grey);
+    text-align: center;
+    border: none;
+     padding: 0;
 }
 
-.appointment-item-number {
-  margin: 0;
-  padding: 0;
+.appointment-number label {
+  cursor: pointer;
+}
+
+.appointment-item-adult input {
   margin-top: 2px;
+  margin-left: 73px;
 }
 
-.adult-label {
-  margin-left: 7px;
-  margin-right: 72px;
-  cursor: pointer;
-  
+.appointment-item-child input {
+  margin-top: 2px; 
+   margin-left: 60px;
 }
 
-.adult-input {
-  margin-right: 90px;
-}
-
-.child-label {
-  margin-right: 58px;
-  cursor: pointer;
+.appointment-item-child label{
+  margin-left: 91px;
 }
 
 .appointment-number input:focus {
-  width: 34px;
-  height: 32px;
+  width: 36px;
+  height: 33px;
   background-color: var(--basic-white);
   border: 2px solid var(--border);
 }
 
-.pic-minus {
+.appointment-number button {
   position: absolute;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  top: 191px;
-  right: 365px;
-}
-
-.pic-minus-child {
-  left: 398px;
-}
-
-.pic-plus {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: absolute;
-  top: 191px;
-  right: 286px;
-}
-
-.pic-plus-child {
-  left: 477px;
-}
-
-.appointment-item-number button {
   width: 37px;
-  height: 38px;
+  height: 37px; 
   margin: 0;
   padding: 0;
   background-color: var(--basic-background-grey);
   border: none;
   outline: none;
   cursor: pointer;
+   justify-content: center;
+    align-items: center;
 }
 
+.pic-minus-adult {
+ top: 190px;
+  right: 365px;
+  display: flex;
+}
+
+.pic-minus-child {
+  top: 190px;
+  left: 398px;
+  display: flex;
+}
+
+.pic-plus-adult {
+ top: 190px;
+  right: 288px;
+}
+
+.pic-plus-child {
+   top: 190px;
+  left: 475px;
+}
+ 
 .pic-plus:hover path {
   fill: var(--basic-black);
 }
@@ -1328,3 +1327,12 @@ margin-top: 45px;
 .modal-map iframe {
   border: none;
 }
+
+
+
+
+
+
+
+
+

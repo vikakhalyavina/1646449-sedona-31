@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic"
-    />
     <link rel="icon" href="favicon/favicon.ico" />
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
@@ -191,7 +186,6 @@
               <p class="appointment-item date-departure">
                 <label for="date-departure">Дата выезда:</label>
                 <input
-                  class=""
                   id="date-departure"
                   type="text"
                   name="date"
@@ -226,9 +220,9 @@
               </p>
             </div>
             <div class="appointment-number">
-              <p class="appointment-item appointment-item-number">
-                <label class="adult-label" for="adult">Взрослые:</label>
-                <button class="pic-minus" type="button" name="minus-adult">
+              <p class="appointment-item appointment-item-adult">
+                <label for="adult">Взрослые:</label>
+                <button class="pic-minus-adult" type="button" name="minus-adult">
                   <svg
                     width="12"
                     height="3"
@@ -240,13 +234,12 @@
                   </svg>
                 </button>
                 <input
-                  class="adult-input"
                   type="text"
                   name="number-adult"
                   value="2"
                   id="adult"
                 />
-                <button class="pic-plus" type="button" name="plus-adult">
+                <button class="pic-plus-adult" type="button" name="plus-adult">
                   <svg
                     width="11"
                     height="11"
@@ -263,10 +256,10 @@
                   </svg>
                 </button>
               </p>
-              <p class="appointment-item appointment-item-number">
-                <label class="child-label" for="child">Дети:</label>
+              <p class="appointment-item appointment-item-child">
+                <label for="child">Дети:</label>
                 <button
-                  class="pic-minus pic-minus-child"
+                  class="pic-minus-child"
                   type="button"
                   name="minus-adult"
                 >
@@ -281,14 +274,13 @@
                   </svg>
                 </button>
                 <input
-                  class="child-input"
                   type="text"
                   name="number-child"
                   value="0"
                   id="child"
                 />
                 <button
-                  class="pic-plus pic-plus-child"
+                  class="pic-plus-child"
                   type="button"
                   name="plus-adult"
                 >
