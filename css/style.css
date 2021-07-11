@@ -17,6 +17,7 @@
   --border: #e5e5e5;
   --toggle: #ababab;
   --logo-html: #bdbbbc;
+  --disabled: #6A6A6A;
 }
 
 /*Font-family*/
@@ -183,11 +184,12 @@
   height: 509px;
   margin: 0;
   padding: 0;
+  background-color: var(--basic-blue);
   background: url("../img/welcome.svg") center top 76px no-repeat,
     url("../img/to-the-gorgeous.svg") center top 132px no-repeat,
     url("../img/sedona.svg") center top 215px no-repeat,
     url("../img/white-line.svg") center bottom no-repeat,
-    url("../img/bg.jpg") center no-repeat, var(--basic-blue);
+    url("../img/bg.jpg") center no-repeat;
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -264,6 +266,7 @@
   margin: 0;
   padding: 0;
   background-image: url(../img/image1.jpg);
+  background-color: var(--basic-blue);
   top: 0px;
   left: 400px;
 }
@@ -326,6 +329,7 @@
   margin: 0;
   padding: 0;
   background-image: url(../img/image2.jpg);
+  background-color: var(--basic-blue);
   top: 0;
   right: 400px;
 }
@@ -402,11 +406,11 @@
   margin-top: 28px;
 }
 
-.button:hover {
+.button-found:hover {
   background-color: var(--hover-blue);
 }
 
-.button:active {
+.button-found:active {
   background-color: var(--active-blue);
   color: rgba(255, 255, 255, 0.3);
 }
@@ -743,6 +747,10 @@
   background-position: 0 0;
   top: 0;
   left: -40px;
+}
+
+.fieldset legend:disabled {
+  color: var(--disabled);
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1254,11 +1262,11 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 43px;
 }
 
-.button-copyright a:hover path {
+.button-copyright:hover path {
   fill: var(--basic-blue);
 }
 
-.button-copyright a:active path {
+.button-copyright:active path {
   fill: var(--logo-html);
 }
 
@@ -1355,6 +1363,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: block;
   width: 1199px;
   height: 594px;
+  background-image: url(../img/map.jpg);
 }
 
 .modal-map iframe {
