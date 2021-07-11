@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
     <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
   </head>
   <body class="page-body">
     <div class="container">
@@ -52,7 +52,7 @@
                 <p class="feature-item-description-picture-number">
                   &mdash;№1&mdash;
                 </p>
-                <p>
+                <p class="description-picture">
                   Седона &mdash; не аттракцион для туристов, там<br />
                   течет своя жизнь
                 </p>
@@ -87,8 +87,10 @@
                   Там есть<br />
                   мост дьявола
                 </h3>
-                <p class="features-item-picture-description-number">&mdash;№2&mdash;</p>
-                <p>
+                <p class="features-item-picture-description-number">
+                  &mdash;№2&mdash;
+                </p>
+                <p class="picture-description">
                   Да, по нему можно пройти! Если конечно <br />
                   вы осмелитесь
                 </p>
@@ -102,7 +104,7 @@
                     площадь
                   </h3>
                   <p class="features-description-number">&mdash;№3&mdash;</p>
-                  <p>
+                  <p class="description-bg">
                     Все достопримечательности<br />
                     находятся очень близко
                   </p>
@@ -113,7 +115,7 @@
                     дорога
                   </h3>
                   <p class="features-description-number">&mdash;№4&mdash;</p>
-                  <p>
+                  <p class="description-bg">
                     Ехать в Седону из Лас-Вегаса совсем<br />
                     не скучно!
                   </p>
@@ -124,7 +126,7 @@
                     туристов
                   </h3>
                   <p class="features-description-number">&mdash;№5&mdash;</p>
-                  <p>
+                  <p class="description-bg">
                     Большинство едет в гранд-каньон<br />
                     и толпится там
                   </p>
@@ -146,6 +148,7 @@
             class="appointment-form"
             action="https://echo.htmlacademy.ru"
             method="post"
+            target="_blank"
           >
             <div class="appointment-date">
               <p class="appointment-item arrival-date">
@@ -161,7 +164,10 @@
                   type="button"
                   name="icon-calendar"
                 >
+                  <span class="visually-hidden">Календарь</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="21"
                     height="23"
                     viewBox="0 0 21 23"
@@ -196,7 +202,10 @@
                   type="button"
                   name="icon-calendar"
                 >
+                  <span class="visually-hidden">Календарь</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="21"
                     height="23"
                     viewBox="0 0 21 23"
@@ -222,8 +231,15 @@
             <div class="appointment-number">
               <p class="appointment-item appointment-item-adult">
                 <label for="adult">Взрослые:</label>
-                <button class="pic-minus pic-minus-adult" type="button" name="minus-adult">
+                <button
+                  class="pic-minus pic-minus-adult"
+                  type="button"
+                  name="minus-adult"
+                >
+                  <span class="visually-hidden">Убрать</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="12"
                     height="3"
                     viewBox="0 0 12 3"
@@ -233,14 +249,16 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input
-                  type="text"
-                  name="number-adult"
-                  value="2"
-                  id="adult"
-                />
-                <button class="pic-plus pic-plus-adult" type="button" name="plus-adult">
+                <input type="text" name="number-adult" value="2" id="adult" />
+                <button
+                  class="pic-plus pic-plus-adult"
+                  type="button"
+                  name="plus-adult"
+                >
+                  <span class="visually-hidden">Добавить</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="11"
                     height="11"
                     viewBox="0 0 11 11"
@@ -263,7 +281,10 @@
                   type="button"
                   name="minus-adult"
                 >
+                  <span class="visually-hidden">Убрать</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="12"
                     height="3"
                     viewBox="0 0 12 3"
@@ -273,18 +294,16 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input
-                  type="text"
-                  name="number-child"
-                  value="0"
-                  id="child"
-                />
+                <input type="text" name="number-child" value="0" id="child" />
                 <button
                   class="pic-plus pic-plus-child"
                   type="button"
                   name="plus-adult"
                 >
+                  <span class="visually-hidden">Добавить</span>
                   <svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="11"
                     height="11"
                     viewBox="0 0 11 11"
@@ -331,6 +350,7 @@
               <ul class="footer-social">
                 <li>
                   <a class="social-button social-button-tw" href="#"
+                    ><span class="visually-hidden">Twitter</span
                     ><img
                       src="img/twitter.svg"
                       alt="twitter"
@@ -340,6 +360,7 @@
                 </li>
                 <li>
                   <a class="social-button social-button-fb" href="#"
+                    ><span class="visually-hidden">Facebook</span
                     ><img
                       src="img/fb-icon.svg"
                       alt="facebook"
@@ -349,6 +370,7 @@
                 </li>
                 <li>
                   <a class="social-button social-button-yt" href="#"
+                    ><span class="visually-hidden">Youtube</span
                     ><img
                       src="img/youtube.svg"
                       alt="youtube"
@@ -362,7 +384,11 @@
               <p class="footer-copyright">Website by</p>
               <div class="button-copyright">
                 <a href="https://htmlacademy.ru/intensive/htmlcss"
+                  ><span class="visually-hidden"
+                    >Ссылка на сайт htmlacademy</span
                   ><svg
+                    aria-hidden="true"
+                    focusable="false"
                     width="115"
                     height="33"
                     viewBox="0 0 115 33"
@@ -416,12 +442,15 @@
                     <path
                       d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z"
                       fill="black"
-                    /></svg></a>
+                    /></svg
+                ></a>
               </div>
             </div>
           </div>
         </section>
       </footer>
     </div>
+    <script src="js/script.js"></script>
+    <!--<script src="js/script.min.js"></script>-->
   </body>
 </html>

@@ -17,7 +17,7 @@
   --border: #e5e5e5;
   --toggle: #ababab;
   --logo-html: #bdbbbc;
-  --disabled: #6A6A6A;
+  --disabled: #6a6a6a;
 }
 
 /*Font-family*/
@@ -228,7 +228,14 @@
 .features h3 {
   font-size: 21px;
   line-height: 21px;
+}
+
+.feature-item-description-picture h3 {
   margin-top: 47px;
+}
+
+.feature-item-picture-description h3 {
+  margin-top: 49px;
 }
 
 .features p {
@@ -239,13 +246,13 @@
 .feature-item-bg {
   color: var(--basic-white);
   width: 400px;
-  height: 256px;
   background-color: var(--basic-blue);
 }
 
 .feature-item-description-picture-number {
-  margin-top: 6px;
-  margin-bottom: 8px;
+  margin: 0;
+  padding: 0;
+  margin-top: 5px;
 }
 
 .feature-item-description-picture {
@@ -262,13 +269,20 @@
   position: absolute;
   display: block;
   width: 800px;
-  height: 256px;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-image: url(../img/image1.jpg);
   background-color: var(--basic-blue);
   top: 0px;
   left: 400px;
+}
+
+.description-picture {
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  padding-bottom: 54px;
 }
 
 .features-item-advantage {
@@ -284,7 +298,7 @@
 }
 
 .features-item-advantage p {
-  margin-bottom: 84px;
+  margin-bottom: 82px;
 }
 
 .features-item-advantage li:nth-child(1)::before {
@@ -325,13 +339,20 @@
   position: absolute;
   display: block;
   width: 800px;
-  height: 256px;
+  height: 100%;
   margin: 0;
   padding: 0;
   background-image: url(../img/image2.jpg);
   background-color: var(--basic-blue);
   top: 0;
   right: 400px;
+}
+
+.picture-description {
+  margin: 0;
+  padding: 0;
+  margin-top: 12px;
+  padding-bottom: 54px;
 }
 
 .feature-item-picture-description {
@@ -351,7 +372,7 @@
 
 .feature-item-description {
   width: 1200px;
-  height: 256px;
+  height: 100%;
   background-color: var(--basic-grey);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -364,6 +385,10 @@
 .features-description-number {
   margin-top: 26px;
   margin-bottom: 24px;
+}
+
+.description-bg {
+  padding-bottom: 41px;
 }
 
 /* Button-main-page */
@@ -749,7 +774,7 @@
   left: -40px;
 }
 
-.fieldset legend:disabled {
+.filter-input-checkbox:disabled + label {
   color: var(--disabled);
 }
 
@@ -775,6 +800,10 @@
   background-position: 0 0;
   top: 0px;
   left: -40px;
+}
+
+.filter-input-checkbox:checked:disabled + label {
+  color: var(--disabled);
 }
 
 /*Range-filter*/
