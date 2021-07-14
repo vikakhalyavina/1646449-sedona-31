@@ -6,7 +6,6 @@
     <link rel="icon" href="favicon/favicon.ico" />
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
-    <link rel="manifest" href="manifest.webmanifest" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.min.css" rel="stylesheet" />
   </head>
@@ -145,7 +144,7 @@
         <section class="form">
           <button class="button-search">Поиск гостиницы в седоне</button>
           <form
-            class="appointment-form"
+            class="appointment-form modal-form"
             action="https://echo.htmlacademy.ru"
             method="post"
             target="_blank"
@@ -154,6 +153,7 @@
               <p class="appointment-item arrival-date">
                 <label for="arrival-date">Дата заезда:</label>
                 <input
+                  class="arrival-date-input"
                   id="arrival-date"
                   type="text"
                   name="date"
@@ -192,6 +192,7 @@
               <p class="appointment-item date-departure">
                 <label for="date-departure">Дата выезда:</label>
                 <input
+                  class="date-departure-input"
                   id="date-departure"
                   type="text"
                   name="date"
@@ -249,7 +250,13 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input type="text" name="number-adult" value="2" id="adult" />
+                <input
+                  class="adult-input"
+                  type="text"
+                  name="number-adult"
+                  value="2"
+                  id="adult"
+                />
                 <button
                   class="pic-plus pic-plus-adult"
                   type="button"
@@ -294,7 +301,13 @@
                     <rect width="12" height="3" fill="#A9A9A9" />
                   </svg>
                 </button>
-                <input type="text" name="number-child" value="0" id="child" />
+                <input
+                  class="child-input"
+                  type="text"
+                  name="number-child"
+                  value="0"
+                  id="child"
+                />
                 <button
                   class="pic-plus pic-plus-child"
                   type="button"
@@ -442,15 +455,13 @@
                     <path
                       d="M109.441 27.0237L105.801 18.1536H103.553L108.392 29.7104L108.371 29.753C108.028 30.6272 107.643 30.947 106.701 30.947H104.196V32.9726H106.701C108.542 32.9726 109.527 32.1411 110.212 30.3499L114.88 18.1536H112.803L109.441 27.0237Z"
                       fill="black"
-                    /></svg
-                ></a>
+                    /></svg></a>
               </div>
             </div>
           </div>
         </section>
       </footer>
     </div>
-    <script src="js/script.js"></script>
-    <!--<script src="js/script.min.js"></script>-->
+    <script src="js/script.min.js"></script>
   </body>
 </html>
